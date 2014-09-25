@@ -125,17 +125,6 @@
         if (!_hideProgressIcons)
             [self drawStop];
         
-    } else {
-        if (!self.iconView && !self.iconPath)
-        {
-            if (!_hideProgressIcons)
-                [self drawArrow];
-        }
-        else if (self.iconPath)
-        {
-            _iconLayer.path = self.iconPath.CGPath;
-            _iconLayer.fillColor = nil;
-        }
     }
 }
 
