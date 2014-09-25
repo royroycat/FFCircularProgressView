@@ -121,9 +121,7 @@
     
     [_progressLayer setPath:processPath.CGPath];
     
-    if ([self progress] == 1.0) {
-        [self drawTick];
-    } else if (([self progress] >= 0) && [self progress] <= 1.0) {
+    if (([self progress] >= 0) && [self progress] <= 1.0) {
         
         if (!_hideProgressIcons)
             [self drawStop];
