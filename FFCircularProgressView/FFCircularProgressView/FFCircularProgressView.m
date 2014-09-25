@@ -122,7 +122,6 @@
     [_progressLayer setPath:processPath.CGPath];
     
     if (([self progress] >= 0) && [self progress] <= 1.0) {
-        
         if (!_hideProgressIcons)
             [self drawStop];
         
@@ -262,9 +261,9 @@
     if (_progress != progress) {
         _progress = progress;
         
-        if (_progress == 1.0) {
+        /*if (_progress == 1.0) {
             [self animateProgressBackgroundLayerFillColor];
-        }
+        }*/
         
         if (_progress == 0.0) {
             _progressBackgroundLayer.fillColor = self.backgroundColor.CGColor;
